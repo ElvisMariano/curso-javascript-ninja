@@ -320,9 +320,9 @@ var pessoa = {
     mostrarAltura: function() {return `Minha altura é ${pessoa.altura}.`},
     apresentacao: function() {
         // Olá, eu sou o [NOME COMPLETO], tenho [IDADE] anos, [ALTURA], meu peso é [PESO] e, só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!
-        sexo = 'o'
-        anos = 'ano'
-        metros = 'metro'
+        var sexo = 'o'
+        var anos = 'ano'
+        var metros = 'metro'
 
         if (pessoa.sexo === 'Feminino') {sexo = 'a'}
         if (pessoa.idade > 1) {anos = 'anos'}
