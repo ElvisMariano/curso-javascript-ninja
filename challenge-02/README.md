@@ -52,16 +52,16 @@ function multiplicar(x, y, c) {
 }
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+multiplicar(5, 2)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+//Preencha todos os valores corretamente
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+multiplicar(5, 2, 2)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+20
 
 /*
 Crie uma função com as seguintes características:
@@ -72,8 +72,35 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+
+function math(x, y, c) {
+    var num1 = false;
+    var num2 = false;
+    var num3 = false;
+
+    if (x != undefined) {
+        num1 = x;
+    }
+    if (y != undefined) {
+        num2 = y;
+    }
+    if (c != undefined) {
+        num3 = c;
+    }
+    if (num1 == false && num2 == false && num3 == false) {
+        return false;
+    } else {
+        return num1 + num2 - num3;
+    }
+    
+}
+
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+math() // false
+math(2) // 2
+math(2, 3) // 5
+math(2, 3, 1) // 4
+
+
 ```
